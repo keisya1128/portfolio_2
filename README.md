@@ -1,4 +1,4 @@
-# Hi, I'm Davina Nur Oktavia! 👋
+# Hi, I'm Keisya! 👋
 
 Welcome to my **Personal Portfolio Website**.
 
@@ -18,25 +18,7 @@ This project is built using:
 - **Icons:** Remixicon
 
 ## 📂 Featured Projects inside the Portfolio
+1.  **Cheesey Cuit:** An e-commerce landing page for a premium cheesecake brand.
 
-You can find details about my key projects such as:
 
-1.  **Website Streaming:** A movie streaming platform built with native HTML, CSS, JS.
-2.  **Cheesey Cuit:** An e-commerce landing page for a premium cheesecake brand.
-3.  **Sistem Monitoring Magang BPKP:** An internship monitoring system built with Laravel.
-
-## 📸 Screenshots
-
-![Portfolio Preview](./images/preview-portfolio.png)
-
-## 📬 Contact Me
-
-Feel free to reach out if you want to collaborate or just say hi!
-
-- **LinkedIn:** Davina Nur Oktavia
-- **Email:** dvnnro@gmail.com
-- **Instagram:** davina.nuro
-
----
-
-_Made with ❤️ by Davina Nur Oktavia_
+_Made with ❤️ by kei_
