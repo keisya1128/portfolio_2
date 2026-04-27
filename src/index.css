@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@import "tailwindcss/utilities";
+
+@layer base{
+    body {
+        font-family: "Poppins", sans-serif;
+    }
+}
+
+/* Animasi untuk kelincinya */
+@keyframes bounceSmall {
+    0%, 100% {
+      transform: translateY(0); /* Posisi normal */
+    }
+    50% {
+      transform: translateY(-8px); /* Sedikit naik ke atas */
+    }
+  }
+  
+  .animate-bounce-small {
+    animation: bounceSmall 1s infinite alternate ease-in-out; /* Jalankan animasi */
+    display: inline-block; 
+  }
+
+  /* Taruh di bagian paling bawah file src/index.css */
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #fff5f7;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #fbcfe8;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #f9a8d4;
+}
