@@ -45,7 +45,7 @@ function App() {
               className="w-7 h-7 rounded-full object-cover border border-pink-200"
               loading="lazy"
             />
-            <q className="text-[13px] font-medium text-pink-600 italic">Kode yang indah lahir dari ketekunan. :D</q>
+            <q className="text-[13px] font-medium text-pink-600 italic">“Building modern websites with passion and precision ”.  :D</q>
           </div>
 
           {/* Judul: Dikecilkan dari text-5xl/6xl ke text-4xl/5xl */}
@@ -63,8 +63,8 @@ function App() {
           {/* Deskripsi: Dikecilkan dari text-lg ke text-base dan max-width dikurangi agar lebih rapi */}
           <p className="text-base leading-relaxed mb-8 text-gray-500 max-w-md">
             Saya memiliki ketertarikan dalam bidang <span className="text-pink-400 font-semibold">Programming</span>. 
-            Proses belajar selama dua tahun terakhir telah membentuk cara saya berpikir logis 
-            dan menciptakan antarmuka yang menyenangkan bagi pengguna.
+        Saya berfokus pada pengembangan website yang modern, responsif, dan mudah digunakan. 
+Berpengalaman dalam membangun antarmuka yang menarik serta memastikan performa dan kenyamanan pengguna dalam setiap aplikasi web.
           </p>
 
           {/* Tombol: Diperkecil paddingnya (px-6 py-3) agar tidak terlalu besar */}
@@ -134,13 +134,14 @@ function App() {
     <div className="flex-[1.5]">
       <div className="flex items-center gap-2.5 mb-5">
         <span className="text-2xl">👋</span>
-        <h2 className="text-2xl font-black text-gray-800 tracking-tight">Kenalan, Yuk!</h2>
+        <h2 className="text-2xl font-black text-gray-800 tracking-tight">Tentang Saya</h2>
       </div>
       <p className="text-sm text-gray-600 leading-relaxed mb-8 italic">
         Halo, Nama saya <span className="font-bold text-pink-500 not-italic">Keisya Shaori N.P</span>. 
         Sebagai <span className="font-semibold text-purple-500 not-italic text-[12px] bg-purple-50 px-2 py-0.5 rounded-md">junior Web Developer</span>, 
-        saya sangat suka merakit kode dari awal hingga menjadi aplikasi yang utuh. 
-        Membangun logika di backend serta mempercantik tampilan di frontend adalah keahlian utama saya.
+       Halo, saya Keisya Shaori Nianindra Putri, seorang Web Developer yang berfokus pada pengembangan aplikasi web yang modern dan responsif. 
+Saya memiliki ketertarikan dalam membangun sistem dari sisi backend serta merancang tampilan frontend yang menarik dan mudah digunakan. 
+Saya terus mengembangkan keterampilan dan mengikuti perkembangan teknologi untuk menghasilkan solusi digital yang efektif dan berkualitas.
       </p>
       
       <div className="flex gap-4">
@@ -312,7 +313,7 @@ function App() {
                 "Bekerja sama dalam tim ",
                 "Melakukan testing dan debugging fitur aplikasi."
               ],
-              images: ["/assets/proyek/intern1.png", "/assets/proyek/intern2.png"]
+              images: ["/assets/image/pkl1.png", "/assets/image/pkl2.png"]
             });
             document.body.style.overflow = 'hidden';
           }}
@@ -346,7 +347,7 @@ function App() {
                 "Melatih komunikasi dan manajemen waktu.",
                 "Membangun relasi antar organisasi sekolah."
               ],
-              images: ["/assets/proyek/osis1.png", "/assets/proyek/osis2.png"]
+              images: ["/assets/image/osis1.png", "/assets/image/osis2.png", "/assets/image/osis3.png","/assets/image/osis4.png", ]
             });
             document.body.style.overflow = 'hidden';
           }}
