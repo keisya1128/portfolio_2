@@ -230,6 +230,7 @@ export const listProyek = [
       Proyek2_alt5,
     ],
     tools: ["HTML", "CSS", "PHP"],
+    github: "https://github.com/keisya1128",
     dad: "300",
   },
   {
@@ -248,6 +249,7 @@ export const listProyek = [
       Proyek6_alt6,
       Proyek6_alt7,
     ],
+    github: "https://github.com/keisya1128",
     dad: "700",
   }, 
  
@@ -291,6 +293,7 @@ export const listProyek = [
       Proyek13_alt3,
     ],
     dad: "700",
+    github: "https://github.com/keisya1128",
   },
 
 
@@ -307,6 +310,7 @@ export const listProyek = [
       Proyek11_alt4,
     ],
     tools: ["laravel", "MYSQL", "Thailwind"],
+    github: "https://github.com/keisya1128",
     dad: "200",
   },
   {
@@ -326,6 +330,7 @@ export const listProyek = [
       Proyek17_alt7,
     ],
     dad: "700",
+    github: "https://github.com/keisya1128",
   }, 
 
 ];

@@ -516,16 +516,33 @@ Saya terus mengembangkan keterampilan dan mengikuti perkembangan teknologi untuk
             </div>
             
             {/* Tombol Aksi - Tetap terlihat di bawah slider */}
-            <div className="grid grid-cols-2 gap-3 pb-4">
-              {selectedProject.link && (
-                <a href={selectedProject.link} target="_blank" className="bg-pink-500 text-white py-3 rounded-2xl font-bold text-center text-xs flex items-center justify-center gap-2">
-                  Demo 🚀
-                </a>
-              )}
-              <a href="https://github.com/shaori-nianindra" target="_blank" className="bg-gray-900 text-white py-3 rounded-2xl font-bold text-center text-xs flex items-center justify-center gap-2">
-                Github <i className="ri-github-fill"></i>
-              </a>
-            </div>
+<div className={`grid ${selectedProject.link ? 'grid-cols-2' : 'grid-cols-1'} gap-3 pb-4`}>
+  
+  {/* Tombol Demo: Hanya muncul jika ada link demo di data.js */}
+  {selectedProject.link && (
+    <a 
+      href={selectedProject.link} 
+      target="_blank" 
+      rel="noreferrer"
+      className="bg-pink-500 text-white py-3 rounded-2xl font-bold text-center text-xs flex items-center justify-center gap-2 hover:bg-pink-600 transition-all shadow-lg shadow-pink-200"
+    >
+      Demo 🚀
+    </a>
+  )}
+
+  {/* Tombol Github: HANYA muncul jika properti github ada di data.js */}
+  {selectedProject.github && (
+    <a 
+      href={selectedProject.github} 
+      target="_blank" 
+      rel="noreferrer"
+      className="bg-gray-900 text-white py-3 rounded-2xl font-bold text-center text-xs flex items-center justify-center gap-2"
+    >
+      Github <i className="ri-github-fill"></i>
+    </a>
+  )}
+  
+</div>
           </div>
 
         </div>
@@ -535,105 +552,119 @@ Saya terus mengembangkan keterampilan dan mengikuti perkembangan teknologi untuk
 )}
       {/* proyek */}
 
-      {/* kontak */}
-<div className="kontak mt-20 container mx-auto px-4 max-w-4xl" id="kontak">
-  {/* Header Section - Dibuat lebih simpel */}
-  <div className="mb-8 text-left">
-    <h1
-      className="text-3xl font-black text-gray-800"
-      data-aos="fade-right"
+{/* Section Kontak */}
+<section className="kontak mt-32 mb-20 container mx-auto px-6 max-w-5xl" id="kontak">
+  {/* Header Section */}
+  <div className="mb-12 text-left">
+    <h2
+      className="text-4xl md:text-5xl font-extrabold text-gray-800 tracking-tight"
+      data-aos="fade-up"
       data-aos-duration="1000"
-      data-aos-once="true"
     >
       Kontak
-    </h1>
+    </h2>
     <p
-      className="text-sm opacity-50 italic mt-1"
-      data-aos="fade-right"
+      className="text-lg text-purple-400 italic mt-2 font-medium"
+      data-aos="fade-up"
       data-aos-duration="1000"
-      data-aos-delay="300"
-      data-aos-once="true"
+      data-aos-delay="200"
     >
       Mari Terhubung & Berkolaborasi ✨
     </p>
   </div>
 
-  {/* Main Layout: 2 Kolom dengan gap yang lebih kecil */}
-  <div className="grid lg:grid-cols-2 gap-4 items-center">
+  {/* Main Layout */}
+  <div className="grid lg:grid-cols-2 gap-12 items-center">
     
-    {/* KOLOM KIRI: FOTO (Tanpa Background & Border) */}
-    
-
-    {/* KOLOM KANAN: DAFTAR KONTAK (Gaya Form Tanpa Kotak Luar) */}
+    {/* KOLOM KIRI: ILUSTRASI/FOTO */}
     <div 
-      className="flex flex-col gap-3"
+      className="hidden lg:flex justify-center items-center"
+      data-aos="zoom-in-right"
+      data-aos-duration="1200"
+    >
+      <div className="relative">
+        {/* Dekorasi Aksen Soft Pastel di Belakang Foto */}
+        <div className="absolute -top-10 -left-10 w-64 h-64 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+        <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-green-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+        
+        {/* Ganti src dengan link foto/ilustrasi minimalis Anda */}
+        <img 
+          src="https://illustrations.popsy.co/pastel/communication.svg" 
+          alt="Contact Illustration" 
+          className="relative z-10 w-full max-w-sm transform hover:scale-105 transition-transform duration-500"
+        />
+      </div>
+    </div>
+
+    {/* KOLOM KANAN: DAFTAR KONTAK */}
+    <div 
+      className="flex flex-col gap-5"
       data-aos="fade-left"
       data-aos-duration="1000"
-      data-aos-once="true"
     >
-      {/* Email */}
-      <div className="bg-white border border-pink-100 p-4 rounded-[20px] flex items-center gap-4 shadow-sm">
-        <div className="w-10 h-10 bg-pink-100 rounded-xl flex items-center justify-center text-pink-500">
-          <i className="ri-mail-line ri-lg"></i>
+      {/* Email Card */}
+      <div 
+        className="group bg-white/40 backdrop-blur-md border border-white/20 p-5 rounded-[30px] flex items-center gap-5 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300"
+      >
+        <div className="w-14 h-14 bg-pink-100 rounded-2xl flex items-center justify-center text-pink-500 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300 shadow-inner">
+          <i className="ri-mail-fill ri-xl"></i>
         </div>
         <div className="flex flex-col">
-          <span className="text-[10px] font-bold text-pink-300 uppercase tracking-widest leading-none mb-1">Email Saya</span>
-          <span className="text-sm font-bold text-gray-700">keisyashaori678@gmail.com</span>
+          <span className="text-[11px] font-black text-pink-400 uppercase tracking-[0.2em] mb-1">Email Saya</span>
+          <span className="text-base font-bold text-gray-700 break-all">keisyashaori678@gmail.com</span>
         </div>
       </div>
 
-      {/* WhatsApp Link */}
+      {/* WhatsApp Card */}
       <a 
         href="https://wa.me/62xxxxxxxxxxx" 
         target="_blank" 
         rel="noreferrer"
-        className="bg-white border border-pink-100 p-4 rounded-[20px] flex items-center gap-4 shadow-sm hover:shadow-md hover:border-pink-200 transition-all group"
+        className="group bg-white/40 backdrop-blur-md border border-white/20 p-5 rounded-[30px] flex items-center gap-5 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300"
       >
-        <div className="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center text-green-500 group-hover:bg-green-500 group-hover:text-white transition-all">
-          <i className="ri-whatsapp-line ri-lg"></i>
+        <div className="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center text-green-500 group-hover:bg-green-500 group-hover:text-white transition-all duration-300 shadow-inner">
+          <i className="ri-whatsapp-fill ri-xl"></i>
         </div>
         <div className="flex flex-col">
-          <span className="text-[10px] font-bold text-green-300 uppercase tracking-widest leading-none mb-1">Whatsapp</span>
-          <span className="text-sm font-bold text-gray-700 italic">Chat Sekarang</span>
+          <span className="text-[11px] font-black text-green-400 uppercase tracking-[0.2em] mb-1">WhatsApp</span>
+          <span className="text-base font-bold text-gray-700 group-hover:text-green-600 transition-colors">Chat Sekarang</span>
         </div>
       </a>
 
-      {/* Instagram Link */}
+      {/* Instagram Card */}
       <a 
-        href="https://instagram.com/keisya_shaori" 
+        href="https://www.instagram.com/yourname___k?igsh=MWNzNmh1aHVwejA1bw==" 
         target="_blank" 
         rel="noreferrer"
-        className="bg-white border border-pink-100 p-4 rounded-[20px] flex items-center gap-4 shadow-sm hover:shadow-md hover:border-pink-200 transition-all group"
+        className="group bg-white/40 backdrop-blur-md border border-white/20 p-5 rounded-[30px] flex items-center gap-5 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300"
       >
-        <div className="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center text-purple-500 group-hover:bg-purple-500 group-hover:text-white transition-all">
-          <i className="ri-instagram-line ri-lg"></i>
+        <div className="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-500 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300 shadow-inner">
+          <i className="ri-instagram-fill ri-xl"></i>
         </div>
         <div className="flex flex-col">
-          <span className="text-[10px] font-bold text-purple-300 uppercase tracking-widest leading-none mb-1">Instagram</span>
-          <span className="text-sm font-bold text-gray-700 italic">@yourname__k</span>
+          <span className="text-[11px] font-black text-purple-400 uppercase tracking-[0.2em] mb-1">Instagram</span>
+          <span className="text-base font-bold text-gray-700 group-hover:text-purple-600 transition-colors">@yourname__k</span>
         </div>
       </a>
 
-      {/* Github Link */}
+      {/* Github Card */}
       <a 
-        href="https://github.com/shaori-nianindra" 
+        href="https://github.com/keisya1128" 
         target="_blank" 
         rel="noreferrer"
-        className="bg-white border border-pink-100 p-4 rounded-[20px] flex items-center gap-4 shadow-sm hover:shadow-md hover:border-pink-200 transition-all group"
+        className="group bg-white/40 backdrop-blur-md border border-white/20 p-5 rounded-[30px] flex items-center gap-5 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300"
       >
-        <div className="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center text-gray-800 group-hover:bg-gray-800 group-hover:text-white transition-all">
-          <i className="ri-github-line ri-lg"></i>
+        <div className="w-14 h-14 bg-gray-100 rounded-2xl flex items-center justify-center text-gray-800 group-hover:bg-gray-800 group-hover:text-white transition-all duration-300 shadow-inner">
+          <i className="ri-github-fill ri-xl"></i>
         </div>
         <div className="flex flex-col">
-          <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest leading-none mb-1">Github</span>
-          <span className="text-sm font-bold text-gray-700 italic">keisya1128</span>
+          <span className="text-[11px] font-black text-gray-400 uppercase tracking-[0.2em] mb-1">Github</span>
+          <span className="text-base font-bold text-gray-700 group-hover:text-black transition-colors">keisya1128</span>
         </div>
       </a>
     </div>
-
   </div>
-</div>
-      {/* Modal Pop-up */}
+</section>      {/* Modal Pop-up */}
       
     </>
   );
