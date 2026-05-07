@@ -119,7 +119,7 @@ Berpengalaman dalam membangun antarmuka yang menarik serta memastikan performa d
       <div className="relative group">
         <div className="absolute inset-0 bg-pink-100 rounded-[25px] rotate-6 group-hover:rotate-3 transition-transform duration-300"></div>
         <img
-          src={DataImage.HeroImage}
+          src={DataImage.AboutImage} 
           alt="Keisya Shaori"
           className="relative w-44 h-56 md:w-52 md:h-64 object-cover rounded-[25px] border-4 border-white shadow-md"
           loading="lazy"
@@ -356,6 +356,8 @@ Saya terus mengembangkan keterampilan dan mengikuti perkembangan teknologi untuk
           Lihat Detail 👥
         </button>
       </div>
+
+      
     )}
   </div>
 

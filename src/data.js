@@ -1,9 +1,11 @@
 import HeroImage from "/assets/hero-img.webp";
 import RabbitEmoji from "/assets/rabbit-emoji.png";
+import FotoPort2 from "/assets/foto-port2.png";
 
 const Image = {
   HeroImage,
   RabbitEmoji,
+  AboutImage: FotoPort2, // Daftarkan di sini
 };
 
 export default Image;
