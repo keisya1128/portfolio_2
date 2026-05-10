@@ -29,79 +29,73 @@ function App() {
   
   return (
     <> 
-      {/* Tambahkan min-h-screen agar hero memenuhi satu layar penuh dan pt-32 untuk jarak dari navbar */}
-      <div className="hero min-h-screen grid md:grid-cols-2 items-center pt-32 pb-10 xl:gap-0 gap-10 grid-cols-1 relative overflow-hidden">
+      {/* Hero section yang responsif */}
+      <div className="hero min-h-screen grid lg:grid-cols-2 md:grid-cols-1 items-center pt-20 sm:pt-24 md:pt-28 lg:pt-32 pb-10 lg:gap-0 gap-8 md:gap-10 relative overflow-hidden px-4 sm:px-6">
         
-        {/* Hiasan Background (Tetap lembut) */}
-        <div className="absolute top-20 right-10 w-64 h-64 bg-pink-100/50 rounded-full blur-3xl -z-10 animate-pulse"></div>
-        <div className="absolute bottom-10 left-10 w-48 h-48 bg-purple-100/50 rounded-full blur-3xl -z-10"></div>
+        {/* Hiasan Background yang responsif */}
+        <div className="absolute top-10 sm:top-16 md:top-20 right-5 sm:right-8 md:right-10 w-32 sm:w-48 md:w-64 h-32 sm:h-48 md:h-64 bg-pink-100/50 rounded-full blur-3xl -z-10 animate-pulse"></div>
+        <div className="absolute bottom-5 sm:bottom-8 md:bottom-10 left-5 sm:left-8 md:left-10 w-24 sm:w-36 md:w-48 h-24 sm:h-36 md:h-48 bg-purple-100/50 rounded-full blur-3xl -z-10"></div>
 
-        <div className="animate__animated animate__fadeInUp animate__delay-1s">
-          {/* Quote box yang lebih kecil sedikit */}
-          <div className="flex items-center gap-3 mb-6 bg-white/60 backdrop-blur-md border border-pink-100 w-fit p-2 px-4 rounded-full shadow-sm shadow-pink-100">
+        <div className="animate__animated animate__fadeInUp animate__delay-1s order-2 lg:order-1">
+          {/* Quote box yang responsif */}
+          <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6 bg-white/60 backdrop-blur-md border border-pink-100 w-fit p-2 px-3 sm:px-4 rounded-full shadow-sm shadow-pink-100">
             <img
               src={DataImage.HeroImage}
               alt="Hero Image"
-              className="w-7 h-7 rounded-full object-cover border border-pink-200"
+              className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 rounded-full object-cover border border-pink-200"
               loading="lazy"
             />
-            <q className="text-[13px] font-medium text-pink-600 italic">“Building modern websites with passion and precision ”.  :D</q>
+            <q className="text-[11px] sm:text-[12px] md:text-[13px] font-medium text-pink-600 italic">"Building modern websites with passion and precision ".  :D</q>
           </div>
 
-          {/* Judul: Dikecilkan dari text-5xl/6xl ke text-4xl/5xl */}
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-5 text-gray-800 leading-tight">
+          {/* Judul yang responsif */}
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 sm:mb-5 text-gray-800 leading-tight">
             Hi, Saya <span className="text-pink-500">Keisya Shaori Nianindra Putri</span>{" "}
             <span className="inline-block align-middle">
               <img
                 src={RabbitEmoji}
                 alt="Kelinci lucu"
-                 className="inline-block w-10 h-10 ml-2 animate-bounce-small"
+                 className="inline-block w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 ml-1 sm:ml-2 animate-bounce-small"
               />
             </span>
           </h1>
 
-          {/* Deskripsi: Dikecilkan dari text-lg ke text-base dan max-width dikurangi agar lebih rapi */}
-          <p className="text-base leading-relaxed mb-8 text-gray-500 max-w-md">
+          {/* Deskripsi yang responsif */}
+          <p className="text-sm sm:text-base leading-relaxed mb-6 sm:mb-8 text-gray-500 max-w-xs sm:max-w-md">
             Saya memiliki ketertarikan dalam bidang <span className="text-pink-400 font-semibold">Programming</span>. 
         Saya berfokus pada pengembangan website yang modern, responsif, dan mudah digunakan. 
 Berpengalaman dalam membangun antarmuka yang menarik serta memastikan performa dan kenyamanan pengguna dalam setiap aplikasi web.
           </p>
 
-          {/* Tombol: Diperkecil paddingnya (px-6 py-3) agar tidak terlalu besar */}
-          <div className="flex items-center sm:gap-4 gap-3">
-            <a
-              href=""
-              download="CV_Keisya S.N.P.pdf"
-              className="bg-pink-400 text-white px-6 py-3 rounded-xl hover:bg-pink-500 transition-all shadow-lg shadow-pink-100 hover:-translate-y-1 flex items-center gap-2 text-sm font-bold"
-            >
-              Download CV <i className="ri-download-line text-lg"></i>
-            </a>
+          {/* Tombol yang responsif */}
+          <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
+
             <a
               href="#proyek"
-              className="bg-white px-6 py-3 rounded-xl hover:bg-pink-50 border border-pink-200 text-pink-400 transition-all hover:-translate-y-1 flex items-center gap-2 text-sm font-bold"
+              className="bg-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl hover:bg-blue-900 border border-blue-700 text-blue-400 transition-all hover:-translate-y-1 flex items-center gap-2 text-xs sm:text-sm font-bold"
             >
-              Lihat Proyek <i className="ri-arrow-down-line text-lg"></i>
+              Lihat Proyek <i className="ri-arrow-down-line text-sm sm:text-lg"></i>
             </a>
           </div>
         </div>
 
-        {/* Area Foto (Ukuran tetap untuk menjaga balance) */}
-        <div className="relative flex justify-center items-center animate__animated animate__fadeInRight animate__delay-1s">
-          <div className="absolute inset-0 bg-gradient-to-tr from-pink-200 to-purple-100 rounded-3xl rotate-6 scale-95 opacity-50"></div>
+        {/* Area Foto yang responsif */}
+        <div className="relative flex justify-center items-center animate__animated animate__fadeInRight animate__delay-1s order-1 lg:order-2 mb-8 lg:mb-0">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-40 sm:w-56 md:w-64 lg:w-[240px] xl:w-[340px] h-40 sm:h-56 md:h-64 lg:h-[240px] xl:h-[340px] bg-gradient-to-tr from-pink-200 to-purple-100 rounded-2xl rotate-6 opacity-50"></div>
           
           <div className="relative group">
             <img
-              src={DataImage.HeroImage}
+              src={DataImage.AboutImage}
               alt="Hero Image"
-              className="relative w-[320px] md:w-[420px] rounded-3xl shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]"
+              className="relative w-32 sm:w-48 md:w-60 lg:w-[220px] xl:w-[320px] aspect-square rounded-lg shadow-2xl transition-transform duration-500 group-hover:scale-[1.02] object-cover"
               loading="lazy"
             />
           </div>
-          <div className="absolute -top-4 -right-4 bg-white p-2 rounded-lg shadow-md rotate-12"> 
-            <span className="text-xl">✨</span> 
+          <div className="absolute -top-2 sm:-top-4 -right-2 sm:-right-4 bg-white p-1.5 sm:p-2 rounded-lg shadow-md rotate-12"> 
+            <span className="text-lg sm:text-xl">✨</span> 
           </div> 
-          <div className="absolute -bottom-4 -left-4 bg-white p-2 rounded-lg shadow-md -rotate-12"> 
-            <span className="text-xl">🎀</span> 
+          <div className="absolute -bottom-2 sm:-bottom-4 -left-2 sm:-left-4 bg-white p-1.5 sm:p-2 rounded-lg shadow-md -rotate-12"> 
+            <span className="text-lg sm:text-xl">🎀</span> 
           </div>
         </div>
       </div>
@@ -410,19 +404,19 @@ Saya terus mengembangkan keterampilan dan mengikuti perkembangan teknologi untuk
           <p className="text-gray-400 max-w-2xl mx-auto italic text-sm text-opacity-80">Kumpulan karya terbaik saya dalam pengembangan aplikasi web.</p>
         </div>
 
-        {/* Grid Proyek: Dibuat 3 kolom supaya ukuran kartu pas (tidak raksasa) */}
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-10">
+        {/* Grid Proyek yang responsif */}
+        <div className="grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-6 sm:gap-8 md:gap-10">
           {listProyek.map((proyek) => (
-            <div key={proyek.id} className="group bg-white border border-pink-100 rounded-[40px] overflow-hidden hover:shadow-[0_20px_50px_rgba(255,192,203,0.2)] transition-all duration-500 hover:-translate-y-3">
-              <div className="relative h-52 overflow-hidden">
+            <div key={proyek.id} className="group bg-white border border-pink-100 rounded-[30px] sm:rounded-[35px] md:rounded-[40px] overflow-hidden hover:shadow-[0_20px_50px_rgba(255,192,203,0.2)] transition-all duration-500 hover:-translate-y-3">
+              <div className="relative h-40 sm:h-48 md:h-52 overflow-hidden">
                 <img src={proyek.gambar} alt={proyek.nama} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
               </div>
-              <div className="p-8 text-center">
-                <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-pink-400 transition-colors">{proyek.nama}</h3>
-                <p className="text-gray-400 text-xs mb-6 line-clamp-2 leading-relaxed">{proyek.desk}</p>
-                <div className="flex items-center gap-3">
-                  <button onClick={() => bukaModal(proyek)} className="flex-[2] bg-pink-400 text-white py-3 rounded-2xl font-bold text-xs hover:bg-pink-500 shadow-md shadow-pink-100 transition-all active:scale-95">Details <i className="ri-arrow-right-line ml-1"></i></button>
-                  {proyek.link && <a href={proyek.link} target="_blank" className="flex-1 p-3 bg-gray-50 text-gray-400 rounded-2xl hover:bg-pink-50 hover:text-pink-400 transition-all border border-gray-100"><i className="ri-external-link-line"></i></a>}
+              <div className="p-4 sm:p-6 md:p-8 text-center">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2 sm:mb-3 group-hover:text-pink-400 transition-colors">{proyek.nama}</h3>
+                <p className="text-gray-400 text-xs mb-4 sm:mb-6 line-clamp-2 leading-relaxed">{proyek.desk}</p>
+                <div className="flex items-center gap-2 sm:gap-3">
+                  <button onClick={() => bukaModal(proyek)} className="flex-[2] bg-pink-400 text-white py-2.5 sm:py-3 rounded-2xl font-bold text-xs hover:bg-pink-500 shadow-md shadow-pink-100 transition-all active:scale-95">Details <i className="ri-arrow-right-line ml-1"></i></button>
+                  {proyek.link && <a href={proyek.link} target="_blank" className="flex-1 p-2.5 sm:p-3 bg-gray-50 text-gray-400 rounded-2xl hover:bg-pink-50 hover:text-pink-400 transition-all border border-gray-100"><i className="ri-external-link-line"></i></a>}
                 </div>
               </div>
             </div>
@@ -446,7 +440,7 @@ Saya terus mengembangkan keterampilan dan mengikuti perkembangan teknologi untuk
       <div className="sticky top-0 z-20 p-4 md:p-5 flex justify-between items-center bg-white/80 backdrop-blur-md border-b border-pink-50">
         <button 
           onClick={tutupModal} 
-          className="bg-white p-2 px-5 rounded-full border border-pink-100 text-pink-500 text-[10px] font-bold flex items-center gap-2 hover:bg-pink-500 hover:text-white transition-all shadow-sm active:scale-95"
+          className="bg-white p-2 px-5 rounded-full border border-blue-700 text-blue-400 text-[10px] font-bold flex items-center gap-2 hover:bg-blue-900 hover:text-white transition-all shadow-sm active:scale-95"
         >
           <i className="ri-arrow-left-line"></i> BACK
         </button>
@@ -554,19 +548,19 @@ Saya terus mengembangkan keterampilan dan mengikuti perkembangan teknologi untuk
 )}
       {/* proyek */}
 
-{/* Section Kontak */}
-<section className="kontak mt-32 mb-20 container mx-auto px-6 max-w-5xl" id="kontak">
+{/* Section Kontak yang responsif */}
+<section className="kontak mt-16 sm:mt-20 md:mt-24 mb-12 sm:mb-16 container mx-auto px-4 sm:px-6 max-w-4xl" id="kontak">
   {/* Header Section */}
-  <div className="mb-12 text-left">
+  <div className="mb-6 sm:mb-8 md:mb-10 text-center">
     <h2
-      className="text-4xl md:text-5xl font-extrabold text-gray-800 tracking-tight"
+      className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 tracking-tight"
       data-aos="fade-up"
       data-aos-duration="1000"
     >
       Kontak
     </h2>
     <p
-      className="text-lg text-purple-400 italic mt-2 font-medium"
+      className="text-sm sm:text-base text-purple-400 italic mt-2 font-medium"
       data-aos="fade-up"
       data-aos-duration="1000"
       data-aos-delay="200"
@@ -576,44 +570,24 @@ Saya terus mengembangkan keterampilan dan mengikuti perkembangan teknologi untuk
   </div>
 
   {/* Main Layout */}
-  <div className="grid lg:grid-cols-2 gap-12 items-center">
+  <div className="flex justify-center">
     
-    {/* KOLOM KIRI: ILUSTRASI/FOTO */}
+    {/* DAFTAR KONTAK */}
     <div 
-      className="hidden lg:flex justify-center items-center"
-      data-aos="zoom-in-right"
-      data-aos-duration="1200"
-    >
-      <div className="relative">
-        {/* Dekorasi Aksen Soft Pastel di Belakang Foto */}
-        <div className="absolute -top-10 -left-10 w-64 h-64 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
-        <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-green-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
-        
-        {/* Ganti src dengan link foto/ilustrasi minimalis Anda */}
-        <img 
-          src="https://illustrations.popsy.co/pastel/communication.svg" 
-          alt="Contact Illustration" 
-          className="relative z-10 w-full max-w-sm transform hover:scale-105 transition-transform duration-500"
-        />
-      </div>
-    </div>
-
-    {/* KOLOM KANAN: DAFTAR KONTAK */}
-    <div 
-      className="flex flex-col gap-5"
-      data-aos="fade-left"
+      className="flex flex-col gap-2 sm:gap-3 md:gap-4 max-w-md"
+      data-aos="fade-up"
       data-aos-duration="1000"
     >
       {/* Email Card */}
       <div 
-        className="group bg-white/40 backdrop-blur-md border border-white/20 p-5 rounded-[30px] flex items-center gap-5 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300"
+        className="group bg-white/40 backdrop-blur-md border border-white/20 p-3 sm:p-4 rounded-[20px] sm:rounded-[25px] flex items-center gap-3 sm:gap-4 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300"
       >
-        <div className="w-14 h-14 bg-pink-100 rounded-2xl flex items-center justify-center text-pink-500 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300 shadow-inner">
-          <i className="ri-mail-fill ri-xl"></i>
+        <div className="w-8 h-8 sm:w-10 sm:h-10 bg-pink-100 rounded-lg sm:rounded-xl flex items-center justify-center text-pink-500 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300 shadow-inner">
+          <i className="ri-mail-fill text-base sm:text-lg"></i>
         </div>
         <div className="flex flex-col">
-          <span className="text-[11px] font-black text-pink-400 uppercase tracking-[0.2em] mb-1">Email Saya</span>
-          <span className="text-base font-bold text-gray-700 break-all">keisyashaori678@gmail.com</span>
+          <span className="text-[9px] sm:text-[10px] font-black text-pink-400 uppercase tracking-[0.2em] mb-1">Email Saya</span>
+          <span className="text-xs sm:text-sm font-bold text-gray-700 break-all">keisyashaori678@gmail.com</span>
         </div>
       </div>
 
@@ -622,14 +596,14 @@ Saya terus mengembangkan keterampilan dan mengikuti perkembangan teknologi untuk
         href="https://wa.me/62xxxxxxxxxxx" 
         target="_blank" 
         rel="noreferrer"
-        className="group bg-white/40 backdrop-blur-md border border-white/20 p-5 rounded-[30px] flex items-center gap-5 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300"
+        className="group bg-white/40 backdrop-blur-md border border-white/20 p-3 sm:p-4 rounded-[20px] sm:rounded-[25px] flex items-center gap-3 sm:gap-4 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300"
       >
-        <div className="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center text-green-500 group-hover:bg-green-500 group-hover:text-white transition-all duration-300 shadow-inner">
-          <i className="ri-whatsapp-fill ri-xl"></i>
+        <div className="w-8 h-8 sm:w-10 sm:h-10 bg-green-100 rounded-lg sm:rounded-xl flex items-center justify-center text-green-500 group-hover:bg-green-500 group-hover:text-white transition-all duration-300 shadow-inner">
+          <i className="ri-whatsapp-fill text-base sm:text-lg"></i>
         </div>
         <div className="flex flex-col">
-          <span className="text-[11px] font-black text-green-400 uppercase tracking-[0.2em] mb-1">WhatsApp</span>
-          <span className="text-base font-bold text-gray-700 group-hover:text-green-600 transition-colors">Chat Sekarang</span>
+          <span className="text-[9px] sm:text-[10px] font-black text-green-400 uppercase tracking-[0.2em] mb-1">WhatsApp</span>
+          <span className="text-xs sm:text-sm font-bold text-gray-700 group-hover:text-green-600 transition-colors">Chat Sekarang</span>
         </div>
       </a>
 
@@ -638,14 +612,14 @@ Saya terus mengembangkan keterampilan dan mengikuti perkembangan teknologi untuk
         href="https://www.instagram.com/yourname___k?igsh=MWNzNmh1aHVwejA1bw==" 
         target="_blank" 
         rel="noreferrer"
-        className="group bg-white/40 backdrop-blur-md border border-white/20 p-5 rounded-[30px] flex items-center gap-5 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300"
+        className="group bg-white/40 backdrop-blur-md border border-white/20 p-3 sm:p-4 rounded-[20px] sm:rounded-[25px] flex items-center gap-3 sm:gap-4 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300"
       >
-        <div className="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-500 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300 shadow-inner">
-          <i className="ri-instagram-fill ri-xl"></i>
+        <div className="w-8 h-8 sm:w-10 sm:h-10 bg-purple-100 rounded-lg sm:rounded-xl flex items-center justify-center text-purple-500 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300 shadow-inner">
+          <i className="ri-instagram-fill text-base sm:text-lg"></i>
         </div>
         <div className="flex flex-col">
-          <span className="text-[11px] font-black text-purple-400 uppercase tracking-[0.2em] mb-1">Instagram</span>
-          <span className="text-base font-bold text-gray-700 group-hover:text-purple-600 transition-colors">@yourname__k</span>
+          <span className="text-[9px] sm:text-[10px] font-black text-purple-400 uppercase tracking-[0.2em] mb-1">Instagram</span>
+          <span className="text-xs sm:text-sm font-bold text-gray-700 group-hover:text-purple-600 transition-colors">@yourname__k</span>
         </div>
       </a>
 
@@ -654,14 +628,14 @@ Saya terus mengembangkan keterampilan dan mengikuti perkembangan teknologi untuk
         href="https://github.com/keisya1128" 
         target="_blank" 
         rel="noreferrer"
-        className="group bg-white/40 backdrop-blur-md border border-white/20 p-5 rounded-[30px] flex items-center gap-5 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300"
+        className="group bg-white/40 backdrop-blur-md border border-white/20 p-3 sm:p-4 rounded-[20px] sm:rounded-[25px] flex items-center gap-3 sm:gap-4 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300"
       >
-        <div className="w-14 h-14 bg-gray-100 rounded-2xl flex items-center justify-center text-gray-800 group-hover:bg-gray-800 group-hover:text-white transition-all duration-300 shadow-inner">
-          <i className="ri-github-fill ri-xl"></i>
+        <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gray-100 rounded-lg sm:rounded-xl flex items-center justify-center text-gray-800 group-hover:bg-gray-800 group-hover:text-white transition-all duration-300 shadow-inner">
+          <i className="ri-github-fill text-base sm:text-lg"></i>
         </div>
         <div className="flex flex-col">
-          <span className="text-[11px] font-black text-gray-400 uppercase tracking-[0.2em] mb-1">Github</span>
-          <span className="text-base font-bold text-gray-700 group-hover:text-black transition-colors">keisya1128</span>
+          <span className="text-[9px] sm:text-[10px] font-black text-gray-400 uppercase tracking-[0.2em] mb-1">Github</span>
+          <span className="text-xs sm:text-sm font-bold text-gray-700 group-hover:text-black transition-colors">keisya1128</span>
         </div>
       </a>
     </div>

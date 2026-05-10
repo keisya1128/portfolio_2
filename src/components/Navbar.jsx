@@ -88,7 +88,6 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
-                <span className="text-xl">🌸</span>
               </a>
             </li>
           ))}

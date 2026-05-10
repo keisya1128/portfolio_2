@@ -133,6 +133,7 @@ import Proyek10 from "/assets/proyek/proyek10.webp";
 import Proyek11 from "/assets/proyek/proyek11.webp";
 import Proyek12 from "/assets/proyek/proyek12.webp";
 import Proyek13 from "/assets/proyek/proyek13.webp";
+import Proyek15 from "/assets/proyek/proyek15_detail1.webp";
 import Proyek17 from "/assets/proyek/proyek17.webp";
 
 
@@ -198,7 +199,10 @@ import Proyek13_alt4 from "/assets/proyek/proyek13_detail4.webp";
 
 
 //proyek 15
-
+import Proyek15_alt1 from "/assets/proyek/proyek15_detail1.webp";
+import Proyek15_alt2 from "/assets/proyek/proyek15_detail2.webp";
+import Proyek15_alt3 from "/assets/proyek/proyek15_detail3.webp"; 
+import Proyek15_alt4 from "/assets/proyek/proyek15_detail4.webp";
 
 //proyek 16
 
@@ -222,7 +226,7 @@ export const listProyek = [
     id: 2,
     gambar: Proyek2,
     nama: "Landing Page E-Commerce",
-    desk: "Proyek landing page ini dirancang untuk produk Cheesey Cuit dengan menarik pelanggan dan menyajikan informasi produk.",
+    desk: "Landing page ini dirancang khusus untuk mempresentasikan produk Cheesey Cuit dengan fokus pada estetika visual yang menarik dan navigasi yang intuitif. Tujuan utama dari proyek ini adalah untuk meningkatkan brand awareness dan meyakinkan pelanggan melalui penyajian informasi produk yang lengkap, mulai dari daftar menu hingga keunggulan bahan yang digunakan. Dengan desain yang responsif, halaman ini memastikan pengalaman berbelanja yang mulus bagi calon pembeli di perangkat apa pun",
     detailGambar: [
       Proyek2,
       Proyek2_alt1,
@@ -239,7 +243,7 @@ export const listProyek = [
     id: 6,
     gambar: Proyek6,
     nama: "Artikel MakeUp ",
-    desk: "Aplikasi Content Management System (CMS) berbasis web yang dikembangkan untuk membuat artikel MakeUp.",
+    desk: "platform Content Management System (CMS) yang dirancang khusus untuk memfasilitasi pembuatan dan publikasi artikel seputar dunia kecantikan secara terorganisir. Melalui aplikasi ini, pengguna dapat dengan mudah menyusun konten edukatif, mengelola galeri produk, hingga membagikan tips makeup terbaru kepada pembaca. Fokus utama proyek ini adalah memberikan pengalaman menulis yang praktis dengan tampilan yang bersih, sehingga informasi yang disampaikan tetap menarik dan mudah dipahami.",
     tools: ["PHP", "Bootstrap", "MySQL"],
     detailGambar: [
       Proyek6,
@@ -260,7 +264,7 @@ export const listProyek = [
     gambar: Proyek12,
     nama: "Game3D",
     link: "https://pplgsmknesaba.itch.io/crazycooprun",
-    desk: "Proyek website streaming ini dibangun sepenuhnya secara native dengan HTML, CSS, dan JavaScript",
+    desk: "Crazy Coop Run adalah sebuah game petualangan 3D yang membawa pemain ke dalam lingkungan peternakan yang dinamis dan penuh tantangan. Proyek ini memfokuskan pada mekanik gameplay yang responsif dan eksplorasi dunia tiga dimensi yang imersif. Dikembangkan dengan Unity, game ini menggabungkan elemen hiburan dengan kualitas visual yang detail, memberikan pengalaman bermain yang seru bagi pengguna di berbagai kalangan.",
     tools: ["Unity", "c#","3D assets"],
     dad: "200",
   },
@@ -270,7 +274,7 @@ export const listProyek = [
     gambar: Proyek10  ,
     nama: "Game 2D  ",
     link: "https://pplgsmknesaba.itch.io/astronomi",
-    desk: "Game edukasi berlatarkan alam semesta yang di penuhi bintang-bintang berkilau ,planet-planet dan nebula yang bercahaya",
+    desk: "Game 2D Space Adventure adalah media pembelajaran interaktif yang dikembangkan untuk mengenalkan keajaiban tata surya dengan cara yang seru. Di dalam game ini, pemain akan menjelajahi luar angkasa yang penuh bintang dan planet sambil menyelesaikan tantangan edukasi yang muncul di setiap level. Dengan visual yang menarik dan kontrol yang mudah, proyek ini bertujuan untuk meningkatkan minat belajar tentang astronomi melalui pengalaman bermain yang imersif.",
     tools: ["unity", "c#" ],
     detailGambar: [
       Proyek10,
@@ -286,8 +290,8 @@ export const listProyek = [
     gambar: Proyek13  ,
     nama: " Website Caffe ",
     link:"https://glory-caffe-project.netlify.app/",
-    desk: "Game edukasi berlatarkan alam semesta yang di penuhi bintang-bintang berkilau ,planet-planet dan nebula yang bercahaya",
-    tools: ["unity", "c#"],
+    desk: "Website ini dirancang sebagai platform informasi digital untuk Glory Coffee guna meningkatkan branding dan jangkauan pelanggan. Fokus utama proyek ini adalah menyajikan menu interaktif yang menarik serta memberikan kemudahan bagi pengunjung untuk mengetahui lokasi. Dengan desain yang elegan dan responsif, website ini memastikan pengalaman pengguna yang nyaman di berbagai perangkat.",
+    tools: ["html", "css", "javascript"],
     detailGambar: [
       Proyek13,
       Proyek13_alt1,
@@ -304,22 +308,41 @@ export const listProyek = [
     gambar: Proyek11,
     nama: "Aplikasi Sertifikat",
     link: "https://cert.haadir.in/login",
-    desk: "Proyek website sertifikat ini dibuat untuk memudahkan kita saat menggenerate sertifikat",
+    desk: "Certigen hadir untuk menangani seluruh proses administrasi sertifikat secara digital. Fokus utama aplikasi ini adalah kemampuannya untuk meng-generate sertifikat otomatis dari data yang ada, sehingga tidak perlu lagi membuatnya satu per satu secara manual. Selain itu, setiap sertifikat yang diterbitkan telah dilengkapi dengan fitur Scan QR Code yang berfungsi sebagai sistem validasi instan untuk memastikan keaslian dokumen tersebut.",
     detailGambar:[
       Proyek11,
       Proyek11_alt2,
       Proyek11_alt3,
       Proyek11_alt4,
     ],
-    tools: ["laravel", "MYSQL", "Thailwind"],
+    tools: ["laravel", "MYSQL", "Tailwind"],
     github: "https://github.com/keisya1128",
     dad: "200",
   },
+
+{
+    id: 15,
+    gambar: Proyek15,
+    nama: "Web Sound Production Profile",
+    link: "https://cv-parkin-productionn.netlify.app/#",
+    desk: "Website profil perusahaan untuk industri audio/sound production. Menonjolkan portofolio audio dan layanan profesional dengan navigasi yang intuitif menggunakan JavaScript.",
+    detailGambar:[
+      Proyek15_alt1,
+      Proyek15_alt2,
+      Proyek15_alt3,
+      Proyek15_alt4,
+    ],
+    tools: ["html", "css", "javascript"],
+    github: "https://github.com/keisya1128",
+    dad: "200",
+  },
+
+
   {
     id: 17,
     gambar: Proyek17,
     nama: "Point Of Sale (POS) ",
-    desk: "Aplikasi Content Management System (CMS) berbasis web yang dikembangkan untuk membuat artikel MakeUp.",
+    desk: "Aplikasi Point of Sale (POS) ini dikembangkan untuk mendigitalisasi proses transaksi penjualan agar lebih cepat dan akurat. Sistem ini memungkinkan pengguna untuk mengelola stok barang secara real-time, mencatat transaksi harian, hingga mencetak struk belanja otomatis. Dengan antarmuka yang bersih, aplikasi ini dirancang untuk membantu pemilik usaha memantau laporan penjualan dengan lebih mudah dan terorganisir..",
     tools: ["PHP", "Bootstrap", "MySQL"],
     detailGambar: [
       Proyek17,
